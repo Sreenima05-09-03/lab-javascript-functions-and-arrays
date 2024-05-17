@@ -121,9 +121,17 @@ function uniquifyArray(words) {
 
 
 // Iteration #6: Find elements
-const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
-
-function doesWordExist() {}
+const words= ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
+console.log(doesWordExist(words, 'matter'));
+console.log(doesWordExist(words, 'hello'));
+function doesWordExist(words,wordtosearch) {
+  for (let i = 0; i < words.length; i++) {
+        if (words[i] === wordToSearch) {
+            return true;
+        }
+    }
+    return false; 
+}
 
 
 
