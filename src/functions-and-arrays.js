@@ -93,7 +93,7 @@ function averageWordLength(words) {
 function avg() {}
 
 // Iteration #5: Unique arrays
-const wordsUnique = [
+const words= [
   'crab',
   'poison',
   'contagious',
@@ -106,8 +106,17 @@ const wordsUnique = [
   'simple',
   'bring'
 ];
+console.log(uniquifyArray(words));
 
-function uniquifyArray() {}
+function uniquifyArray(words) {
+   const uniqueWords = [];
+    for (let i = 0; i < words.length; i++) {
+        if (uniqueWords.indexOf(words[i]) === -1){
+            uniqueWords.push(words[i]);
+        }
+    }
+    return uniqueWords;
+}
 
 
 
