@@ -136,7 +136,7 @@ function doesWordExist(words,wordtosearch) {
 
 
 // Iteration #7: Count repetition
-const wordsCount = [
+const words= [
   'machine',
   'matter',
   'subset',
@@ -149,8 +149,19 @@ const wordsCount = [
   'disobedience',
   'matter'
 ];
+console.log(howManyTimes(words, 'matter'));
+console.log(howManyTimes(words, 'machine'));
+console.log(howManyTimes(words, 'hello'));
+function howManyTimes(words,wordtosearch) {
+  let count = 0;
+    for (let i = 0; i < words.length; i++) {
+        if (words[i] === wordToSearch) {
+            count++;
+        }
+    }
 
-function howManyTimes() {}
+    return count; 
+}
 
 
 
