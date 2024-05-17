@@ -12,9 +12,22 @@ console.log(maxOfTwoNumbers(7, 7));
 
 
 // Iteration #2: Find longest word
+// Testing the function
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
+console.log(findLongestWord(words));
 
-function findLongestWord() {}
+function findLongestWord(words) {
+  if (words.length === 0) {
+        return null; 
+    }
+    let longestWord = words[0]; 
+    for (let i = 1; i < words.length; i++) {
+        if (words[i].length > longestWord.length) {
+            longestWord = words[i]; 
+        }
+    }
+    return longestWord;
+}  
 
 
 
