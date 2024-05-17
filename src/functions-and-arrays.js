@@ -53,9 +53,24 @@ function sum() {}
 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
-const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
+const numbers = [2, 6, 9, 10, 7, 4, 1, 9];
+console.log(averageNumbers(numbers));
+function sumNumbers(numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    return sum; 
+}
+function averageNumbers(numbers) {
+  if (numbers.length === 0) {
+        return null; 
+    }
+    const sum = sumNumbers(numbers); 
+    const average = sum / numbers.length;
+    return average;
+}
 
-function averageNumbers() {}
 
 
 // Level 2: Array of strings
